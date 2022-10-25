@@ -4,6 +4,9 @@ using System.Reflection;
 
 namespace External
 {
+    //dynamic application = COMObject.CreateObject("Photoshop.Application");
+    //application.DisplayDialogs = 3; // transparent dynamic dispatch
+
     public class COMObject : DynamicObject
     {
         private readonly object instance;
